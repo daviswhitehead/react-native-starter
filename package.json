@@ -17,7 +17,8 @@
     "tslint": "tslint 'src/**/*.ts?(x)'",
     "precommit": "lint-staged",
     "prepush": "npm run test",
-    "prepare": "patch-package && if [ -f ./scripts/postinstall.sh ]; then sh ./scripts/postinstall.sh; fi"
+    "prepare": "patch-package && if [ -f ./scripts/postinstall.sh ]; then sh ./scripts/postinstall.sh; fi",
+    "info": "react-native info"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
