@@ -179,6 +179,7 @@ dependencies {
     implementation(project(':react-native-firebase')) {
         transitive = false
     }
+    implementation project(':react-native-share-extension')
 
     // Other implementations
     implementation "com.google.android.gms:play-services-base:15.0.1"

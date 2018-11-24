@@ -26,6 +26,7 @@ import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.analytics.RNFirebaseAnalyticsPackage;
 import io.sentry.RNSentryPackage;
 import com.apsl.versionnumber.RNVersionNumberPackage;
+import com.alinz.parkerdan.shareextension.SharePackage;
 
 public class MainApplication extends NavigationApplication {
 
@@ -64,7 +65,8 @@ public class MainApplication extends NavigationApplication {
           new RNVersionNumberPackage(),
           new RNSentryPackage(),
           new RNFirebasePackage(),
-          new RNFirebaseAnalyticsPackage()
+          new RNFirebaseAnalyticsPackage(),
+          new SharePackage()
         );
     }
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">react-native-starter</string>
+    <string name="title_activity_share">ShareExtension</string>
 </resources>
