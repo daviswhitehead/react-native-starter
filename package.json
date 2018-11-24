@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "build:env": "sh ./scripts/build-env.sh",
-    "build:e2e:ios": "detox build --configuration ios.sim.release",
+    "build:e2e:ios.app": "detox build --configuration ios.app.sim.release",
+    "build:e2e:ios.extension": "detox build --configuration ios.extension.sim.release",
     "build:e2e:android": "detox build --configuration android.emu.release",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "rename": "sh ./scripts/rename.sh",
     "podspec": "sh ./scripts/podspec.sh",
     "test": "jest",
     "test:e2e": "yarn build:e2e:ios && yarn test:e2e:ios",
-    "test:e2e:ios": "detox test --configuration ios.sim.release",
+    "test:e2e:ios.app": "detox test --configuration ios.app.sim.release",
+    "test:e2e:ios.extension": "detox test --configuration ios.extension.sim.release",
     "test:e2e:android": "detox test --configuration android.emu.release",
     "lint": "yarn tslint",
     "tslint": "tslint 'src/**/*.ts?(x)'",
@@ -41,6 +43,7 @@
     "react-native-navigation": "2.0.2571",
     "react-native-sentry": "0.39.0",
     "react-native-share-extension": "^1.2.1",
+    "react-native-swiss-knife": "^0.0.5",
     "react-native-version-number": "0.3.4"
   },
   "devDependencies": {
@@ -115,9 +118,15 @@
     "test-runner": "jest",
     "specs": "e2e",
     "configurations": {
-      "ios.sim.release": {
+      "ios.app.sim.release": {
         "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/react-native-starter.app",
         "build": "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -workspace ios/react-native-starter.xcworkspace -scheme react-native-starter -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet",
+        "type": "ios.simulator",
+        "name": "iPhone 7 Plus"
+      },
+      "ios.extension.sim.release": {
+        "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/ShareExtension.appex",
+        "build": "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -workspace ios/react-native-starter.xcworkspace -scheme ShareExtension -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet",
         "type": "ios.simulator",
         "name": "iPhone 7 Plus"
       },

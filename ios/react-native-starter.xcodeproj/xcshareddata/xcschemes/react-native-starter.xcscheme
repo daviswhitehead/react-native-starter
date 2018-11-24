@@ -42,6 +42,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "611379E221A9A12300D9E6C6"
+               BuildableName = "ShareExtensionTests.xctest"
+               BlueprintName = "ShareExtensionTests"
+               ReferencedContainer = "container:react-native-starter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -75,6 +85,13 @@
             ReferencedContainer = "container:react-native-starter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "${SRCROOT}"
+            value = "/Users/dwhitehead/Documents/github/react-native-starter/blah/"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

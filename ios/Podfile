@@ -25,6 +25,7 @@ def shared_pods
   pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
   pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
+  pod 'react-native-swiss-knife', :path => '../node_modules/react-native-swiss-knife'
   
   # REACT NATIVE FIREBASE
   pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios/RNFirebase.podspec'

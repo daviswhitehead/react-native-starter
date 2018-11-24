@@ -6086,6 +6086,11 @@ react-native-share-extension@^1.2.1:
   resolved "https://registry.yarnpkg.com/react-native-share-extension/-/react-native-share-extension-1.2.1.tgz#e71b87126f7c3c2b400f2c5f3d7d30e72ed9c0ad"
   integrity sha512-C+WaUFhM4iMtH38N7/44lX4uW/B+XSbeJnSBZMMgKsZQIJKzJSYQklKVZdxf2/V5YOjjPaXohFwabTYclpJhtA==
 
+react-native-swiss-knife@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-swiss-knife/-/react-native-swiss-knife-0.0.5.tgz#be8114a6c82a7c89f0cf2babec2f908a11653b41"
+  integrity sha512-DxObZDcw09zNbTuhjA4fd2T5yY0ojSXOy1MHPcRZrMlckMBWtDF+kpDEy8vV12usjoKlJiRcJWNgmfIo2UR6OQ==
+
 react-native-typescript-transformer@1.2.10:
   version "1.2.10"
   resolved "https://registry.yarnpkg.com/react-native-typescript-transformer/-/react-native-typescript-transformer-1.2.10.tgz#6f76c1449028cdeafa184b533301ecd547367ed1"

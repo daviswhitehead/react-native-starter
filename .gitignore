@@ -75,3 +75,4 @@ google-services.json
 
 # Misc
 .expo/
+tmp/
