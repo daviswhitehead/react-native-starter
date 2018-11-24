@@ -1,0 +1,19 @@
+.host {
+  flex: 1;
+  flexDirection: column;
+  justifyContent: center;
+  alignItems: center;
+}
+
+.widthContainer {
+  flex: 0.8;
+  flexDirection: row;
+  justifyContent: center;
+  alignItems: center;
+}
+
+.box {
+  height: 100;
+  width: 100;
+  backgroundColor: purple;
+}

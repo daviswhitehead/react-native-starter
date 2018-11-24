@@ -5,6 +5,7 @@ def shared_pods
   pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  ## In Xcode: Pods project -> select React Target -> Build Settings -> set Require Only App-Extension-Safe API to No 
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'Core',
     'CxxBridge',
@@ -20,6 +21,7 @@ def shared_pods
   ]
 
   # THIRD PARTY
+  ## In Xcode: Pods project -> select React Target -> Build Settings -> set Require Only App-Extension-Safe API to No 
   pod 'ReactNativeNavigation', :path => '../node_modules/react-native-navigation'
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
   pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
@@ -34,8 +36,16 @@ end
 # APP ONLY
 target 'react-native-starter' do
   shared_pods
-
+  
   # THIRD PARTY
   pod 'react-native-config', :path => '../node_modules/react-native-config'
   pod 'react-native-version-number', :path => '../node_modules/react-native-version-number'
+end
+
+# EXTENSION ONLY
+target 'ShareExtension' do
+  shared_pods
+
+  # THIRD PARTY
+  pod 'react-native-share-extension', :path => '../node_modules/react-native-share-extension'
 end

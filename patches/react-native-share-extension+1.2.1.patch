@@ -1,0 +1,28 @@
+patch-package
+new file mode 100644
+--- /dev/null
++++ b/node_modules/react-native-share-extension/react-native-share-extension.podspec
+@@ -0,0 +1,23 @@
++require 'json'
++
++package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
++
++Pod::Spec.new do |s|
++  s.name         = "react-native-share-extension"
++  s.version      = package['version']
++  s.summary      = "react-native-share-extension's podspec"
++
++  s.authors      = { "https:" => "https:" }
++  s.homepage     = "https://github.com/https://github.com/alinz/react-native-share-extension"
++  s.license      = package['license']
++  s.platform     = :ios, "8.0"
++
++  s.module_name  = "ReactNativeShareExtension"
++
++  s.source       = { :git => "https://github.com/https://github.com/alinz/react-native-share-extension.git", :tag => "v#{s.version}" }
++  s.source_files  = "ios/**/*.{h,m}"
++  s.header_mappings_dir = 'ios'
++  s.public_header_files = "ios/*.h"
++
++  s.dependency 'React'
++end
