@@ -40,15 +40,15 @@ export default class ShareExtensionScreen extends React.Component {
         type,
         value,
       });
-      console.log(type);
-      console.log(value);
+      // console.log(type);
+      // console.log(value);
     } catch (e) {
       // console.error(e);
     }
   }
 
   render() {
-    console.log('render');
+    // console.log('render');
     // console.log(this.state);
     // console.log(firebase);
 
